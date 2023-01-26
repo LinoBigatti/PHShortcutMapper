@@ -182,7 +182,7 @@ class ApplicationConfig(object):
 
         assert os.path.isdir(output_dir), "The output dir is not a directory"
         assert self.os in VALID_OS_NAMES, "The application Operating system must be one of these: " + str(VALID_OS_NAMES)
-        assert self.version is not None and len(self.version) > 0, "The application version must be assigned"
+        # assert self.version is not None and len(self.version) > 0, "The application version must be assigned"
 
         # Check for empty
         if self.is_empty():

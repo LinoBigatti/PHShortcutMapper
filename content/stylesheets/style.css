@@ -535,9 +535,9 @@ div#keyboard button .label {
     position: absolute;
     top: 0;
     left: 0;
-    width: 48px;
-    padding: 2px 0 0 4px;
-    font-size: 12px;
+    width: 42px;
+    padding: 2px 0 0 2px;
+    font-size: 11px;
     font-weight: 400;
     color: #6b6b6b;
     text-align: left;
@@ -551,7 +551,7 @@ div#keyboard button .shortcut {
     left: -1px;
     font-family: 'Lato', sans-serif;
     width: 90%;
-    max-height: 32px;
+    max-height: 48px;
     padding: 0 3px 0 3px;
     font-size: 9px;
     font-weight: 300;

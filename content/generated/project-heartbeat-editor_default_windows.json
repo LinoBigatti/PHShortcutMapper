@@ -1,0 +1,577 @@
+{
+    "name" : "Project Heartbeat Editor",
+    "version" : "Default",
+    "os" : "windows",
+    "mods_used" : ["CONTROL", "SHIFT"],
+    "default_context" : "",
+    "contexts" : {
+        "All" : {
+            "A" : [
+                {"name":"Create / Change type to Square", "mods":[]},
+                {"name":"Move angles towards the first note", "mods":["SHIFT"]},
+                {"name":"Select all", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Copy notes", "mods":["CONTROL"]},
+                {"name":"Flip angle", "mods":[]}
+            ],
+            "COMMA" : [
+                {"name":"Increase timeline resolution", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Create / Change type to Circle", "mods":[]},
+                {"name":"Deselect", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete notes", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease note type", "mods":[]},
+                {"name":"Fine position notes down", "mods":["SHIFT"]},
+                {"name":"Move notes down", "mods":["CONTROL"]}
+            ],
+            "E" : [
+                {"name":"Create / Change type to Heart / Slide Right", "mods":[]},
+                {"name":"Create / Change type to Slide Right 2", "mods":["SHIFT"]}
+            ],
+            "EIGHT" : [
+                {"name":"Toggle timeline snap", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"Create a smooth speed transition", "mods":["CONTROL"]},
+                {"name":"Interpolate angles", "mods":[]},
+                {"name":"Toggle double", "mods":["SHIFT"]}
+            ],
+            "F1" : [
+                {"name":"Open/Close the settings menu", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Open the editor docs", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Open the script manager", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Open the diagnostics menu", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Toggle the fps counter", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Show hidden charts", "mods":[]}
+            ],
+            "FIVE" : [
+                {"name":"Set resolution to 16ths", "mods":["SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Set resolution to 12ths", "mods":["SHIFT"]}
+            ],
+            "G" : [
+                {"name":"Toggle grid snap", "mods":["CONTROL"]},
+                {"name":"Toggle grid", "mods":[]}
+            ],
+            "I" : [
+                {"name":"Create / Change type to triangle", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Create / Change type to Square", "mods":[]},
+                {"name":"Quick phrase start", "mods":["CONTROL"]},
+                {"name":"Shift selection left", "mods":["SHIFT"]}
+            ],
+            "K" : [
+                {"name":"Create / Change type to Cross", "mods":[]},
+                {"name":"Quick lyric", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Create / Change type to Circle", "mods":[]},
+                {"name":"Quick phrase end", "mods":["CONTROL"]},
+                {"name":"Shift selection right", "mods":["SHIFT"]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Fine position notes left", "mods":["SHIFT"]},
+                {"name":"Move notes left", "mods":["CONTROL"]},
+                {"name":"Move playhead to the left", "mods":[]}
+            ],
+            "M" : [
+                {"name":"Toggle metronome", "mods":[]}
+            ],
+            "N" : [
+                {"name":"Create a new script", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ASTERISK" : [
+                {"name":"Circle size smaller", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Arrange up", "mods":[]},
+                {"name":"Set angle to 270º", "mods":["CONTROL"]},
+                {"name":"Vertical multi top", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Make circle counter-clockwise from the inside", "mods":["SHIFT"]},
+                {"name":"Make circle counter-clockwise", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Arrange center", "mods":[]},
+                {"name":"Quad", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Arrange left", "mods":[]},
+                {"name":"Set angle to 180º", "mods":["CONTROL"]},
+                {"name":"Vertical multi left", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Circle size bigger", "mods":[]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Arrange up right", "mods":[]},
+                {"name":"Inverted triangle", "mods":["SHIFT"]},
+                {"name":"Set angle to 315º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Arrange down left", "mods":[]},
+                {"name":"Quad (From inside)", "mods":["SHIFT"]},
+                {"name":"Set angle to 135º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Make circle clockwise from the inside", "mods":["SHIFT"]},
+                {"name":"Make circle clockwise", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Arrange up left", "mods":[]},
+                {"name":"Set angle to 225º", "mods":["CONTROL"]},
+                {"name":"Triangle", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Arrange right", "mods":[]},
+                {"name":"Set angle to 0º", "mods":["CONTROL"]},
+                {"name":"Vertical multi right", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Arrange down right", "mods":[]},
+                {"name":"Set angle to 45º", "mods":["CONTROL"]},
+                {"name":"Sideways quad", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Arrange down", "mods":[]},
+                {"name":"Set angle to 90º", "mods":["CONTROL"]},
+                {"name":"Vertical multi bottom", "mods":["SHIFT"]}
+            ],
+            "O" : [
+                {"name":"Create / Change type to Heart / Slide Right", "mods":[]},
+                {"name":"Create / Change type to Slide Right 2", "mods":["SHIFT"]},
+                {"name":"Open a chart", "mods":["CONTROL"]}
+            ],
+            "ONE" : [
+                {"name":"Set resolution to 4ths", "mods":["SHIFT"]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Flip horizontally", "mods":["SHIFT"]},
+                {"name":"Mirror horizontally", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Flip vertically", "mods":["SHIFT"]},
+                {"name":"Mirror vertically", "mods":[]}
+            ],
+            "PERIOD" : [
+                {"name":"Decrease timeline resolution", "mods":[]}
+            ],
+            "Q" : [
+                {"name":"Create / Change type to Heart / Slide Left", "mods":[]},
+                {"name":"Create / Change type to Slide Left 2", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Toggle hold", "mods":[]},
+                {"name":"Toggle sustain", "mods":["SHIFT"]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Fine position notes right", "mods":["SHIFT"]},
+                {"name":"Move notes right", "mods":["CONTROL"]},
+                {"name":"Move playhead to the right", "mods":[]}
+            ],
+            "S" : [
+                {"name":"Create / Change type to Cross", "mods":[]},
+                {"name":"Move angles away from the first note", "mods":["SHIFT"]},
+                {"name":"Save the chart / script as", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save the chart / script", "mods":["CONTROL"]}
+            ],
+            "SEVEN" : [
+                {"name":"Set resolution to 32nds", "mods":["SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Set resolution to 24ths", "mods":["SHIFT"]}
+            ],
+            "SPACE" : [
+                {"name":"Play / Pause", "mods":[]}
+            ],
+            "THREE" : [
+                {"name":"Set resolution to 8ths", "mods":["SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Set resolution to 6ths", "mods":["SHIFT"]}
+            ],
+            "U" : [
+                {"name":"Create / Change type to Heart / Slide Left", "mods":[]},
+                {"name":"Create / Change type to Slide Left 2", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Fine position notes up", "mods":["SHIFT"]},
+                {"name":"Increase note type", "mods":[]},
+                {"name":"Move notes up", "mods":["CONTROL"]}
+            ],
+            "V" : [
+                {"name":"Flip oscillation", "mods":[]},
+                {"name":"Paste notes", "mods":["CONTROL"]}
+            ],
+            "W" : [
+                {"name":"Create / Change type to triangle", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Cut notes", "mods":["CONTROL"]},
+                {"name":"Move angles away from the last note", "mods":["SHIFT"]},
+                {"name":"Playtest at time", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Redo", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Move angles towards the last note", "mods":["SHIFT"]},
+                {"name":"Playtest", "mods":[]},
+                {"name":"Undo", "mods":["CONTROL"]}
+            ]
+        },
+        "Angles" : {
+            "A" : [
+                {"name":"Move angles towards the first note", "mods":["SHIFT"]}
+            ],
+            "C" : [
+                {"name":"Flip angle", "mods":[]}
+            ],
+            "F" : [
+                {"name":"Interpolate angles", "mods":[]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Set angle to 270º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Set angle to 180º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Set angle to 315º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Set angle to 135º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Set angle to 225º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Set angle to 0º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Set angle to 45º", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Set angle to 90º", "mods":["CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Move angles away from the first note", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Flip oscillation", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Move angles away from the last note", "mods":["SHIFT"]}
+            ],
+            "Z" : [
+                {"name":"Move angles towards the last note", "mods":["SHIFT"]}
+            ]
+        },
+        "Events" : {
+            "F" : [
+                {"name":"Create a smooth speed transition", "mods":["CONTROL"]}
+            ],
+            "J" : [
+                {"name":"Quick phrase start", "mods":["CONTROL"]}
+            ],
+            "K" : [
+                {"name":"Quick lyric", "mods":["CONTROL"]}
+            ],
+            "L" : [
+                {"name":"Quick phrase end", "mods":["CONTROL"]}
+            ]
+        },
+        "Files" : {
+            "N" : [
+                {"name":"Create a new script", "mods":["CONTROL"]}
+            ],
+            "O" : [
+                {"name":"Open a chart", "mods":["CONTROL"]}
+            ],
+            "S" : [
+                {"name":"Save the chart / script as", "mods":["CONTROL", "SHIFT"]},
+                {"name":"Save the chart / script", "mods":["CONTROL"]}
+            ]
+        },
+        "General" : {
+            "F1" : [
+                {"name":"Open/Close the settings menu", "mods":[]}
+            ],
+            "F2" : [
+                {"name":"Open the editor docs", "mods":[]}
+            ],
+            "F3" : [
+                {"name":"Open the script manager", "mods":[]}
+            ],
+            "F4" : [
+                {"name":"Open the diagnostics menu", "mods":[]}
+            ],
+            "F5" : [
+                {"name":"Toggle the fps counter", "mods":[]}
+            ],
+            "F6" : [
+                {"name":"Show hidden charts", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Move playhead to the left", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Move playhead to the right", "mods":[]}
+            ],
+            "Y" : [
+                {"name":"Redo", "mods":["CONTROL"]}
+            ],
+            "Z" : [
+                {"name":"Undo", "mods":["CONTROL"]}
+            ]
+        },
+        "Notes" : {
+            "A" : [
+                {"name":"Create / Change type to Square", "mods":[]}
+            ],
+            "D" : [
+                {"name":"Create / Change type to Circle", "mods":[]}
+            ],
+            "DOWN_ARROW" : [
+                {"name":"Decrease note type", "mods":[]}
+            ],
+            "E" : [
+                {"name":"Create / Change type to Heart / Slide Right", "mods":[]},
+                {"name":"Create / Change type to Slide Right 2", "mods":["SHIFT"]}
+            ],
+            "F" : [
+                {"name":"Toggle double", "mods":["SHIFT"]}
+            ],
+            "I" : [
+                {"name":"Create / Change type to triangle", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Create / Change type to Square", "mods":[]}
+            ],
+            "K" : [
+                {"name":"Create / Change type to Cross", "mods":[]}
+            ],
+            "L" : [
+                {"name":"Create / Change type to Circle", "mods":[]}
+            ],
+            "O" : [
+                {"name":"Create / Change type to Heart / Slide Right", "mods":[]},
+                {"name":"Create / Change type to Slide Right 2", "mods":["SHIFT"]}
+            ],
+            "Q" : [
+                {"name":"Create / Change type to Heart / Slide Left", "mods":[]},
+                {"name":"Create / Change type to Slide Left 2", "mods":["SHIFT"]}
+            ],
+            "R" : [
+                {"name":"Toggle hold", "mods":[]},
+                {"name":"Toggle sustain", "mods":["SHIFT"]}
+            ],
+            "S" : [
+                {"name":"Create / Change type to Cross", "mods":[]}
+            ],
+            "U" : [
+                {"name":"Create / Change type to Heart / Slide Left", "mods":[]},
+                {"name":"Create / Change type to Slide Left 2", "mods":["SHIFT"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Increase note type", "mods":[]}
+            ],
+            "W" : [
+                {"name":"Create / Change type to triangle", "mods":[]}
+            ]
+        },
+        "Placements" : {
+            "DOWN_ARROW" : [
+                {"name":"Fine position notes down", "mods":["SHIFT"]},
+                {"name":"Move notes down", "mods":["CONTROL"]}
+            ],
+            "G" : [
+                {"name":"Toggle grid snap", "mods":["CONTROL"]},
+                {"name":"Toggle grid", "mods":[]}
+            ],
+            "LEFT_ARROW" : [
+                {"name":"Fine position notes left", "mods":["SHIFT"]},
+                {"name":"Move notes left", "mods":["CONTROL"]}
+            ],
+            "NUMPAD_EIGHT" : [
+                {"name":"Arrange up", "mods":[]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Arrange center", "mods":[]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Arrange left", "mods":[]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Arrange up right", "mods":[]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Arrange down left", "mods":[]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Arrange up left", "mods":[]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Arrange right", "mods":[]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Arrange down right", "mods":[]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Arrange down", "mods":[]}
+            ],
+            "RIGHT_ARROW" : [
+                {"name":"Fine position notes right", "mods":["SHIFT"]},
+                {"name":"Move notes right", "mods":["CONTROL"]}
+            ],
+            "UP_ARROW" : [
+                {"name":"Fine position notes up", "mods":["SHIFT"]},
+                {"name":"Move notes up", "mods":["CONTROL"]}
+            ]
+        },
+        "Presets" : {
+            "NUMPAD_EIGHT" : [
+                {"name":"Vertical multi top", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FIVE" : [
+                {"name":"Quad", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_FOUR" : [
+                {"name":"Vertical multi left", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_NINE" : [
+                {"name":"Inverted triangle", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_ONE" : [
+                {"name":"Quad (From inside)", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SEVEN" : [
+                {"name":"Triangle", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_SIX" : [
+                {"name":"Vertical multi right", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_THREE" : [
+                {"name":"Sideways quad", "mods":["SHIFT"]}
+            ],
+            "NUMPAD_TWO" : [
+                {"name":"Vertical multi bottom", "mods":["SHIFT"]}
+            ]
+        },
+        "Preview" : {
+            "M" : [
+                {"name":"Toggle metronome", "mods":[]}
+            ],
+            "SPACE" : [
+                {"name":"Play / Pause", "mods":[]}
+            ],
+            "X" : [
+                {"name":"Playtest at time", "mods":[]}
+            ],
+            "Z" : [
+                {"name":"Playtest", "mods":[]}
+            ]
+        },
+        "Selection" : {
+            "A" : [
+                {"name":"Select all", "mods":["CONTROL"]}
+            ],
+            "C" : [
+                {"name":"Copy notes", "mods":["CONTROL"]}
+            ],
+            "D" : [
+                {"name":"Deselect", "mods":["CONTROL"]}
+            ],
+            "DELETE" : [
+                {"name":"Delete notes", "mods":[]}
+            ],
+            "J" : [
+                {"name":"Shift selection left", "mods":["SHIFT"]}
+            ],
+            "L" : [
+                {"name":"Shift selection right", "mods":["SHIFT"]}
+            ],
+            "V" : [
+                {"name":"Paste notes", "mods":["CONTROL"]}
+            ],
+            "X" : [
+                {"name":"Cut notes", "mods":["CONTROL"]}
+            ]
+        },
+        "Sync" : {
+            "COMMA" : [
+                {"name":"Increase timeline resolution", "mods":[]}
+            ],
+            "EIGHT" : [
+                {"name":"Toggle timeline snap", "mods":["SHIFT"]}
+            ],
+            "FIVE" : [
+                {"name":"Set resolution to 16ths", "mods":["SHIFT"]}
+            ],
+            "FOUR" : [
+                {"name":"Set resolution to 12ths", "mods":["SHIFT"]}
+            ],
+            "ONE" : [
+                {"name":"Set resolution to 4ths", "mods":["SHIFT"]}
+            ],
+            "PERIOD" : [
+                {"name":"Decrease timeline resolution", "mods":[]}
+            ],
+            "SEVEN" : [
+                {"name":"Set resolution to 32nds", "mods":["SHIFT"]}
+            ],
+            "SIX" : [
+                {"name":"Set resolution to 24ths", "mods":["SHIFT"]}
+            ],
+            "THREE" : [
+                {"name":"Set resolution to 8ths", "mods":["SHIFT"]}
+            ],
+            "TWO" : [
+                {"name":"Set resolution to 6ths", "mods":["SHIFT"]}
+            ]
+        },
+        "Transforms" : {
+            "NUMPAD_ASTERISK" : [
+                {"name":"Circle size smaller", "mods":[]}
+            ],
+            "NUMPAD_ENTER" : [
+                {"name":"Make circle counter-clockwise from the inside", "mods":["SHIFT"]},
+                {"name":"Make circle counter-clockwise", "mods":[]}
+            ],
+            "NUMPAD_MINUS" : [
+                {"name":"Circle size bigger", "mods":[]}
+            ],
+            "NUMPAD_PLUS" : [
+                {"name":"Make circle clockwise from the inside", "mods":["SHIFT"]},
+                {"name":"Make circle clockwise", "mods":[]}
+            ],
+            "PAGE_DOWN" : [
+                {"name":"Flip horizontally", "mods":["SHIFT"]},
+                {"name":"Mirror horizontally", "mods":[]}
+            ],
+            "PAGE_UP" : [
+                {"name":"Flip vertically", "mods":["SHIFT"]},
+                {"name":"Mirror vertically", "mods":[]}
+            ]
+        }
+    }
+}
