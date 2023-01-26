@@ -1,0 +1,3 @@
+function! BuildProject()
+  FloatermNew --disposable scons -j8 platform=x11
+endfunction
