@@ -190,7 +190,7 @@ function ShortcutMapper() {
         var self = this;
         var filename = this.selectedApp.data[this.selectedVersion][this.selectedOS];
         $.ajax({
-            url: "/ShortcutMapper/content/generated/" + filename,
+            url: "/ph-editor-reference/ShortcutMapper/content/generated/" + filename,
             dataType: "json"
         }).done(function (keydata) {
             self.selectedAppData = keydata;
@@ -210,7 +210,7 @@ function ShortcutMapper() {
         var self = this;
         var filename = sitedata_keyboards[this.selectedKeyboardType][this.selectedOS];
         $.ajax({
-            url: "/ShortcutMapper/content/keyboards/" + filename,
+            url: "/ph-editor-reference/ShortcutMapper/content/keyboards/" + filename,
             dataType: "html"
         }).done(function (content) {
 
