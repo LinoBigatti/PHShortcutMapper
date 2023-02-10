@@ -1,6 +1,22 @@
 ShortcutMapper
 ==================
 
+This is the module used to render the shortcuts page. It is based on [this repo](https://github.com/waldobronchart/ShortcutMapper) by [Waldo Bronchart](https://github.com/waldobronchart)
+
+## How to update the shortcuts list
+
+To update the shortcuts, first open the editor and press **F4**. Now, navigate to the "*Shortcuts*" tab and press the "*Print Editor Shortcuts*" button. Copy the entire output, and paste it into `sources/ph-editor/raw/ph_editor.json`. Then, from the top level of this repo, input the following commands:
+
+```bash
+python3 sources/ph-editor/raw_to_intermediate.py
+python3 utils/export_intermediate_data.py --explicit-numpad-keys sources/ph-editor/intermediate/ph_editor.json
+```
+
+The shortcut list should now be updated. If it isnt updated, then press **Control+F5** in your browser to force a reload.
+
+Original README
+===============
+
 This is a keyboard shortcuts visualiser hosted here on Github:
 http://waldobronchart.github.io/ShortcutMapper/
 

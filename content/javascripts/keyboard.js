@@ -12,7 +12,7 @@
         },
 
         activeModKeys: [],
-        contextItems: null,
+        ontextItems: null,
         highlightedKeyName: null,
         standardModClasses: ["nomod", "alt", "command", "control", "shift", "multi", "other"],
 
@@ -41,7 +41,7 @@
                         for (var i=0; i<keyItems.length; i++) {
                             var keyItem = keyItems[i];
                             var mods = (keyItem.mods.length > 0) ? keyItem.mods.join('_') : "NOMOD";
-                            html += "<div class='shortcut' data-mods='" + mods + "'>" + keyItem.name + "</div>";
+                            html += "<div class='shortcut' data-mods='" + mods + "' title='" + keyItem.name + "'>" + keyItem.name + "</div>";
                         }
 
                         html += "</div>";

@@ -36,8 +36,6 @@ function ShortcutMapper() {
         }
 
         // Find all elements we're going to be using a lot
-        this.elemAppSelect = $("#application_select");
-        this.elemVersionSelect = $("#version_select");
         this.elemContextSelect = $("#context_select");
         this.elemKeyboardTypeSelect = $("#keyboardtype_select");
 
@@ -50,29 +48,14 @@ function ShortcutMapper() {
             inherit_select_classes: true,
             search_contains: true
         });
-        this._updateAppOptions(this.selectedApp.name);
-        this._updateVersionOptions(this.selectedVersion);
+        this.selectedVersion = Object.keys(this.selectedApp.data)[0]
         this._updateKeyboardTypeOptions(this.selectedKeyboardType);
-        $("nav button.os-" + this.selectedOS).addClass("checked");
+        $("#mainwrap button.os-" + this.selectedOS).addClass("checked");
         this._initSearchBox();
 
         // Events
-        this.elemAppSelect.on("change", function() {
-            var val = $(this).val();
-            self.selectApplication(val);
-            self._updateVersionOptions(0);
-            self._fetchAppKeydataAndUpdate();
-        });
-        this.elemVersionSelect.on("change", function() {
-            self.selectedVersion = $(this).val();
-            self._fetchAppKeydataAndUpdate();
-        });
-        this.elemContextSelect.on("change", function() {
-            self.selectedContext = $(this).val();
-            self.elemKeyboard.keyboard("option", "context", self.selectedContext);
-        });
-        $("nav button.os-radiobutton").click(function () {
-            $("nav button.os-radiobutton").removeClass("checked");
+        $("#mainwrap button.os-radiobutton").click(function () {
+            $("#mainwrap button.os-radiobutton").removeClass("checked");
             $(this).addClass("checked");
             self.selectedOS = $(this).attr("data-os");
             self._fetchAppKeydataAndUpdate();
@@ -80,6 +63,10 @@ function ShortcutMapper() {
         this.elemKeyboardTypeSelect.on("change", function() {
             self.selectedKeyboardType = $(this).val();
             self._updateKeyboard();
+        });
+        this.elemContextSelect.on("change", function() {
+            self.selectedContext = $(this).val();
+            self.elemKeyboard.keyboard("option", "context", self.selectedContext);
         });
 
         // Load in the keyboard html and available shotcut contexts
@@ -139,7 +126,6 @@ function ShortcutMapper() {
             if (name === sitedata_apps[i].name.toLowerCase()) {
                 this.selectedApp = sitedata_apps[i];
                 window.location.hash = "#" + this._appNameToHash(this.selectedApp.name);
-                document.title = this.selectedApp.name + " Shortcuts";
                 return;
             }
         }
@@ -156,26 +142,6 @@ function ShortcutMapper() {
         this.elemContextSelect.val(name);
         this.elemContextSelect.trigger("chosen:updated");
         this.elemKeyboard.data("keyboard").switchContext(this.selectedContext);
-    };
-
-
-
-
-
-    this._updateAppOptions = function(selected) {
-        var applicationNames = sitedata_apps.map(function(app) { return app.name; }).sort();
-        var newAppName = this._setSelectOptions(this.elemAppSelect, selected, applicationNames);
-
-        // In case the app didn't exist in list
-        if (newAppName.toLowerCase() !== selected) {
-            this.selectApplication(newAppName);
-        }
-    };
-
-    this._updateVersionOptions = function(selected) {
-        // get all versions from the keys of the selectedApp.data element
-        var applicationVersions = Object.keys(this.selectedApp.data).sort().reverse();
-        this.selectedVersion = this._setSelectOptions(this.elemVersionSelect, selected, applicationVersions);
     };
 
     this._updateContextOptions = function(selected) {
@@ -224,7 +190,7 @@ function ShortcutMapper() {
         var self = this;
         var filename = this.selectedApp.data[this.selectedVersion][this.selectedOS];
         $.ajax({
-            url: "content/generated/" + filename,
+            url: "/ShortcutMapper/content/generated/" + filename,
             dataType: "json"
         }).done(function (keydata) {
             self.selectedAppData = keydata;
@@ -244,7 +210,7 @@ function ShortcutMapper() {
         var self = this;
         var filename = sitedata_keyboards[this.selectedKeyboardType][this.selectedOS];
         $.ajax({
-            url: "content/keyboards/" + filename,
+            url: "/ShortcutMapper/content/keyboards/" + filename,
             dataType: "html"
         }).done(function (content) {
 
@@ -327,6 +293,10 @@ function ShortcutMapper() {
         var numContexts = Object.keys(this.selectedAppData.contexts).length;
         for (var contextName in this.selectedAppData.contexts) {
             if (!this.selectedAppData.contexts.hasOwnProperty(contextName)) {
+                continue;
+            }
+
+            if (contextName == "All") {
                 continue;
             }
             
