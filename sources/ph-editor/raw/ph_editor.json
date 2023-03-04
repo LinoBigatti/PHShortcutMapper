@@ -1,61 +1,37 @@
 [
 	{
-		"action": "editor_move_playhead_left",
-		"category": "General",
-		"name": "Move playhead to the left",
-		"shortcut": "Left"
-	},
-	{
-		"action": "editor_move_playhead_right",
-		"category": "General",
-		"name": "Move playhead to the right",
-		"shortcut": "Right"
-	},
-	{
-		"action": "gui_undo",
-		"category": "General",
-		"name": "Undo",
-		"shortcut": "Ctrl + Z"
-	},
-	{
-		"action": "gui_redo",
-		"category": "General",
-		"name": "Redo",
-		"shortcut": "Ctrl + Y"
-	},
-	{
 		"action": "editor_settings",
-		"category": "General",
+		"category": "Menus",
 		"name": "Open/Close the settings menu",
 		"shortcut": "F1"
 	},
 	{
 		"action": "editor_show_docs",
-		"category": "General",
+		"category": "Menus",
 		"name": "Open the editor docs",
 		"shortcut": "F2"
 	},
 	{
 		"action": "editor_open_script_manager",
-		"category": "General",
+		"category": "Menus",
 		"name": "Open the script manager",
 		"shortcut": "F3"
 	},
 	{
 		"action": "toggle_diagnostics",
-		"category": "General",
+		"category": "Menus",
 		"name": "Open the diagnostics menu",
 		"shortcut": "F4"
 	},
 	{
 		"action": "toggle_fps",
-		"category": "General",
+		"category": "Menus",
 		"name": "Toggle the fps counter",
 		"shortcut": "F5"
 	},
 	{
 		"action": "show_hidden",
-		"category": "General",
+		"category": "Menus",
 		"name": "Show hidden charts",
 		"shortcut": "F6"
 	},
@@ -64,12 +40,6 @@
 		"category": "Files",
 		"name": "Open a chart",
 		"shortcut": "Ctrl + O"
-	},
-	{
-		"action": "editor_open_scripts_dir",
-		"category": "Files",
-		"name": "Open the scripts directory",
-		"shortcut": ""
 	},
 	{
 		"action": "editor_save",
@@ -88,144 +58,6 @@
 		"category": "Files",
 		"name": "Create a new script",
 		"shortcut": "Ctrl + N"
-	},
-	{
-		"action": "editor_play",
-		"category": "Preview",
-		"name": "Play / Pause",
-		"shortcut": "Space"
-	},
-	{
-		"action": "editor_playtest",
-		"category": "Preview",
-		"name": "Playtest",
-		"shortcut": "Z"
-	},
-	{
-		"action": "editor_playtest_at_time",
-		"category": "Preview",
-		"name": "Playtest at time",
-		"shortcut": "X"
-	},
-	{
-		"action": "editor_toggle_metronome",
-		"category": "Preview",
-		"name": "Toggle metronome",
-		"shortcut": "M"
-	},
-	{
-		"action": "editor_toggle_bg",
-		"category": "Preview",
-		"name": "Toggle background",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_toggle_video",
-		"category": "Preview",
-		"name": "Toggle video",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_select_all",
-		"category": "Selection",
-		"name": "Select all",
-		"shortcut": "Ctrl + A"
-	},
-	{
-		"action": "editor_deselect",
-		"category": "Selection",
-		"name": "Deselect",
-		"shortcut": "Ctrl + D"
-	},
-	{
-		"action": "editor_shift_selection_left",
-		"category": "Selection",
-		"name": "Shift selection left",
-		"shortcut": "Shift + J"
-	},
-	{
-		"action": "editor_shift_selection_right",
-		"category": "Selection",
-		"name": "Shift selection right",
-		"shortcut": "Shift + L"
-	},
-	{
-		"action": "editor_select_2nd",
-		"category": "Selection",
-		"name": "Select every 2nd note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_select_3rd",
-		"category": "Selection",
-		"name": "Select every 3rd note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_select_4th",
-		"category": "Selection",
-		"name": "Select every 4th note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_cut",
-		"category": "Selection",
-		"name": "Cut notes",
-		"shortcut": "Ctrl + X"
-	},
-	{
-		"action": "editor_copy",
-		"category": "Selection",
-		"name": "Copy notes",
-		"shortcut": "Ctrl + C"
-	},
-	{
-		"action": "editor_paste",
-		"category": "Selection",
-		"name": "Paste notes",
-		"shortcut": "Ctrl + V"
-	},
-	{
-		"action": "editor_delete",
-		"category": "Selection",
-		"name": "Delete notes",
-		"shortcut": "Delete"
-	},
-	{
-		"action": "editor_make_normal",
-		"category": "Notes",
-		"name": "Convert to normal note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_toggle_hold",
-		"category": "Notes",
-		"name": "Toggle hold",
-		"shortcut": "R"
-	},
-	{
-		"action": "editor_toggle_sustain",
-		"category": "Notes",
-		"name": "Toggle sustain",
-		"shortcut": "Shift + R"
-	},
-	{
-		"action": "editor_toggle_double",
-		"category": "Notes",
-		"name": "Toggle double",
-		"shortcut": "Shift + F"
-	},
-	{
-		"action": "editor_change_note_up",
-		"category": "Notes",
-		"name": "Increase note type",
-		"shortcut": "Up"
-	},
-	{
-		"action": "editor_change_note_down",
-		"category": "Notes",
-		"name": "Decrease note type",
-		"shortcut": "Down"
 	},
 	{
 		"action": "editor_resolution_4",
@@ -288,16 +120,190 @@
 		"shortcut": "Period"
 	},
 	{
-		"action": "editor_toggle_sfx",
+		"action": "editor_tap_metronome",
 		"category": "Sync",
-		"name": "Toggle the hitsound sfxs",
-		"shortcut": ""
+		"name": "Tap metronome",
+		"shortcut": "Tab"
 	},
 	{
-		"action": "editor_toggle_waveform",
+		"action": "editor_toggle_metronome",
 		"category": "Sync",
-		"name": "Toggle the waveform display",
-		"shortcut": ""
+		"name": "Toggle metronome",
+		"shortcut": "M"
+	},
+	{
+		"action": "note_up",
+		"category": "Notes",
+		"name": "Note up",
+		"shortcut": "W"
+	},
+	{
+		"action": "note_up",
+		"category": "Notes",
+		"name": "Note up",
+		"shortcut": "I"
+	},
+	{
+		"action": "note_up",
+		"category": "Notes",
+		"name": "Note up",
+		"shortcut": "Space"
+	},
+	{
+		"action": "note_down",
+		"category": "Notes",
+		"name": "Note down",
+		"shortcut": "S"
+	},
+	{
+		"action": "note_down",
+		"category": "Notes",
+		"name": "Note down",
+		"shortcut": "K"
+	},
+	{
+		"action": "note_down",
+		"category": "Notes",
+		"name": "Note down",
+		"shortcut": "Space"
+	},
+	{
+		"action": "note_left",
+		"category": "Notes",
+		"name": "Note left",
+		"shortcut": "A"
+	},
+	{
+		"action": "note_left",
+		"category": "Notes",
+		"name": "Note left",
+		"shortcut": "J"
+	},
+	{
+		"action": "note_left",
+		"category": "Notes",
+		"name": "Note left",
+		"shortcut": "Space"
+	},
+	{
+		"action": "note_right",
+		"category": "Notes",
+		"name": "Note right",
+		"shortcut": "D"
+	},
+	{
+		"action": "note_right",
+		"category": "Notes",
+		"name": "Note right",
+		"shortcut": "L"
+	},
+	{
+		"action": "note_right",
+		"category": "Notes",
+		"name": "Note right",
+		"shortcut": "Space"
+	},
+	{
+		"action": "slide_left",
+		"category": "Notes",
+		"name": "Slide left",
+		"shortcut": "Q"
+	},
+	{
+		"action": "slide_left",
+		"category": "Notes",
+		"name": "Slide left",
+		"shortcut": "U"
+	},
+	{
+		"action": "slide_left",
+		"category": "Notes",
+		"name": "Slide left",
+		"shortcut": "1"
+	},
+	{
+		"action": "slide_right",
+		"category": "Notes",
+		"name": "Slide right",
+		"shortcut": "E"
+	},
+	{
+		"action": "slide_right",
+		"category": "Notes",
+		"name": "Slide right",
+		"shortcut": "O"
+	},
+	{
+		"action": "slide_right",
+		"category": "Notes",
+		"name": "Slide right",
+		"shortcut": "3"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "E"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "Q"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "U"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "O"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "3"
+	},
+	{
+		"action": "heart_note",
+		"category": "Notes",
+		"name": "Heart note",
+		"shortcut": "1"
+	},
+	{
+		"action": "editor_toggle_hold",
+		"category": "Notes",
+		"name": "Toggle hold",
+		"shortcut": "H"
+	},
+	{
+		"action": "editor_toggle_sustain",
+		"category": "Notes",
+		"name": "Toggle sustain",
+		"shortcut": "Shift + H"
+	},
+	{
+		"action": "editor_toggle_double",
+		"category": "Notes",
+		"name": "Toggle double",
+		"shortcut": "Shift + D"
+	},
+	{
+		"action": "editor_change_note_up",
+		"category": "Notes",
+		"name": "Increase note type",
+		"shortcut": "Up"
+	},
+	{
+		"action": "editor_change_note_down",
+		"category": "Notes",
+		"name": "Decrease note type",
+		"shortcut": "Down"
 	},
 	{
 		"action": "editor_grid",
@@ -310,12 +316,6 @@
 		"category": "Placements",
 		"name": "Toggle grid snap",
 		"shortcut": "Ctrl + G"
-	},
-	{
-		"action": "editor_show_arrange_menu",
-		"category": "Placements",
-		"name": "Show arrange menu",
-		"shortcut": ""
 	},
 	{
 		"action": "editor_arrange_l",
@@ -368,7 +368,7 @@
 	{
 		"action": "editor_arrange_center",
 		"category": "Placements",
-		"name": "Arrange center",
+		"name": "Stack notes",
 		"shortcut": "NumPad 5"
 	},
 	{
@@ -420,30 +420,6 @@
 		"shortcut": "Ctrl + Down"
 	},
 	{
-		"action": "editor_rotate_center",
-		"category": "Placements",
-		"name": "Rotate around the selection center",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_rotate_left",
-		"category": "Placements",
-		"name": "Rotate around the leftmost note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_rotate_right",
-		"category": "Placements",
-		"name": "Rotate around the rightmost note",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_rotate_screen_center",
-		"category": "Placements",
-		"name": "Rotate around the screen center",
-		"shortcut": ""
-	},
-	{
 		"action": "editor_flip_angle",
 		"category": "Angles",
 		"name": "Flip angle",
@@ -460,12 +436,6 @@
 		"category": "Angles",
 		"name": "Interpolate angles",
 		"shortcut": "F"
-	},
-	{
-		"action": "editor_interpolate_distance",
-		"category": "Angles",
-		"name": "Interpolate distances",
-		"shortcut": ""
 	},
 	{
 		"action": "editor_flip_oscillation",
@@ -660,34 +630,10 @@
 		"shortcut": "Shift + NumPad 9"
 	},
 	{
-		"action": "editor_create_timing_change",
-		"category": "Events",
-		"name": "Create timing change",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_create_speed_change",
-		"category": "Events",
-		"name": "Create speed change",
-		"shortcut": ""
-	},
-	{
 		"action": "editor_smooth_bpm",
 		"category": "Events",
 		"name": "Create a smooth speed transition",
 		"shortcut": "Ctrl + F"
-	},
-	{
-		"action": "editor_create_intro_skip",
-		"category": "Events",
-		"name": "Create intro skip",
-		"shortcut": ""
-	},
-	{
-		"action": "editor_create_section",
-		"category": "Events",
-		"name": "Create chart section",
-		"shortcut": ""
 	},
 	{
 		"action": "editor_quick_lyric",
@@ -706,5 +652,125 @@
 		"category": "Events",
 		"name": "Quick phrase end",
 		"shortcut": "Ctrl + L"
+	},
+	{
+		"action": "editor_play",
+		"category": "Preview",
+		"name": "Play / Pause",
+		"shortcut": "Space"
+	},
+	{
+		"action": "editor_playtest",
+		"category": "Preview",
+		"name": "Playtest",
+		"shortcut": "Z"
+	},
+	{
+		"action": "editor_playtest_at_time",
+		"category": "Preview",
+		"name": "Playtest at time",
+		"shortcut": "X"
+	},
+	{
+		"action": "editor_select_all",
+		"category": "Selection",
+		"name": "Select all",
+		"shortcut": "Ctrl + A"
+	},
+	{
+		"action": "editor_deselect",
+		"category": "Selection",
+		"name": "Deselect",
+		"shortcut": "Ctrl + D"
+	},
+	{
+		"action": "editor_shift_selection_left",
+		"category": "Selection",
+		"name": "Shift selection left",
+		"shortcut": "Shift + J"
+	},
+	{
+		"action": "editor_shift_selection_right",
+		"category": "Selection",
+		"name": "Shift selection right",
+		"shortcut": "Shift + L"
+	},
+	{
+		"action": "editor_cut",
+		"category": "Selection",
+		"name": "Cut notes",
+		"shortcut": "Ctrl + X"
+	},
+	{
+		"action": "editor_copy",
+		"category": "Selection",
+		"name": "Copy notes",
+		"shortcut": "Ctrl + C"
+	},
+	{
+		"action": "editor_paste",
+		"category": "Selection",
+		"name": "Paste notes",
+		"shortcut": "Ctrl + V"
+	},
+	{
+		"action": "editor_delete",
+		"category": "Selection",
+		"name": "Delete notes",
+		"shortcut": "Delete"
+	},
+	{
+		"action": "editor_delete",
+		"category": "Selection",
+		"name": "Delete notes",
+		"shortcut": "BackSpace"
+	},
+	{
+		"action": "gui_accept",
+		"category": "Miscellaneous",
+		"name": "Menu accept",
+		"shortcut": "Enter"
+	},
+	{
+		"action": "gui_cancel",
+		"category": "Miscellaneous",
+		"name": "Menu cancel",
+		"shortcut": "Escape"
+	},
+	{
+		"action": "gui_undo",
+		"category": "Miscellaneous",
+		"name": "Undo",
+		"shortcut": "Ctrl + Z"
+	},
+	{
+		"action": "gui_redo",
+		"category": "Miscellaneous",
+		"name": "Redo",
+		"shortcut": "Ctrl + Y"
+	},
+	{
+		"action": "editor_move_playhead_left",
+		"category": "Miscellaneous",
+		"name": "Move playhead to the left",
+		"shortcut": "Left"
+	},
+	{
+		"action": "editor_move_playhead_right",
+		"category": "Miscellaneous",
+		"name": "Move playhead to the right",
+		"shortcut": "Right"
+	},
+	{
+		"action": "editor_scale_up",
+		"category": "Miscellaneous",
+		"name": "Scale up",
+		"shortcut": "Ctrl + Plus"
+	},
+	{
+		"action": "editor_scale_down",
+		"category": "Miscellaneous",
+		"name": "Scale down",
+		"shortcut": "Ctrl + Minus"
 	}
 ]

@@ -64,7 +64,11 @@ EXTRA_SHORTCUTS = [
 base_dir = os.path.dirname(__file__)
 with open(base_dir + "/raw/ph_editor.json", mode="r") as f:
     shortcuts = json.load(f)
-    shortcuts += EXTRA_SHORTCUTS
+
+    extra_shortcut_actions = [shortcut["action"] for shortcut in EXTRA_SHORTCUTS]
+    extra_shortcut_actions.append("heart_note")
+
+    shortcuts = [shortcut for shortcut in shortcuts if not shortcut["action"] in extra_shortcut_actions]
 
     for shortcut in shortcuts:
         k = shortcut["shortcut"]
