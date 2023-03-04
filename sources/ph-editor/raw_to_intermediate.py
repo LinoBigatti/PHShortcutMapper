@@ -75,5 +75,8 @@ with open(base_dir + "/raw/ph_editor.json", mode="r") as f:
 
         data.add_shortcut("All", shortcut["name"], k, "")
         data.add_shortcut(shortcut["category"], shortcut["name"], k, "")
+    
+    with open(base_dir + "/intermediate/ph_editor_og_format.json", mode="w") as f2:
+        json.dump(shortcuts, f2)
 
 data.serialize(base_dir + "/intermediate/ph_editor.json")
