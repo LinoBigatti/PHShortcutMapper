@@ -294,6 +294,12 @@
 		"shortcut": "Shift + D"
 	},
 	{
+		"action": "editor_make_slide",
+		"category": "Notes",
+		"name": "Make slide chain",
+		"shortcut": "Shift + C"
+	},
+	{
 		"action": "editor_change_note_up",
 		"category": "Notes",
 		"name": "Increase note type",

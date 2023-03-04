@@ -32,6 +32,7 @@
             "Toggle hold": ["H", ""],
             "Toggle sustain": ["Shift + H", ""],
             "Toggle double": ["Shift + D", ""],
+            "Make slide chain": ["Shift + C", ""],
             "Increase note type": ["Up", ""],
             "Decrease note type": ["Down", ""],
             "Toggle grid": ["G", ""],
@@ -164,6 +165,7 @@
             "Toggle hold": ["H", ""],
             "Toggle sustain": ["Shift + H", ""],
             "Toggle double": ["Shift + D", ""],
+            "Make slide chain": ["Shift + C", ""],
             "Increase note type": ["Up", ""],
             "Decrease note type": ["Down", ""]
         },

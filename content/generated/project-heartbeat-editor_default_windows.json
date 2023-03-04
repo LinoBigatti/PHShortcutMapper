@@ -15,7 +15,8 @@
             ],
             "C" : [
                 {"name":"Copy notes", "mods":["CONTROL"]},
-                {"name":"Flip angle", "mods":[]}
+                {"name":"Flip angle", "mods":[]},
+                {"name":"Make slide chain", "mods":["SHIFT"]}
             ],
             "COMMA" : [
                 {"name":"Increase timeline resolution", "mods":[]}
@@ -363,6 +364,9 @@
             ]
         },
         "Notes" : {
+            "C" : [
+                {"name":"Make slide chain", "mods":["SHIFT"]}
+            ],
             "D" : [
                 {"name":"Toggle double", "mods":["SHIFT"]}
             ],
